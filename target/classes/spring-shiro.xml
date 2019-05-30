@@ -5,9 +5,9 @@
         http://www.springframework.org/schema/context/spring-context-4.3.xsd">
 
 	<!-- 使用spring组件扫描@service -->
-	<context:component-scan base-package="com.peng.service" />
+	<context:component-scan base-package="com.peng.web.service" />
 	<!-- 自定义域realm -->
-	<bean id="custom_Realm" class="com.peng.realm.CustomRealm"></bean>
+	<bean id="custom_Realm" class="com.peng.web.realm.CustomRealm"></bean>
 	<!-- 安全管理器 ref对象 -->
 	<bean id="securityManager" class="org.apache.shiro.web.mgt.DefaultWebSecurityManager">
 		<property name="realm" ref="custom_Realm" />

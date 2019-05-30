@@ -9,6 +9,9 @@
  
     <!-- 使用spring组件扫描@controller -->
     <context:component-scan base-package="com.peng.web.controller"/>
+    <!-- 
+    <context:component-scan base-package="com.peng.web"/>
+     -->
     <!-- 通过annotation-driven可以替代下边的处理器映射器和适配器 -->
  
     <!-- 自动注解 -->
